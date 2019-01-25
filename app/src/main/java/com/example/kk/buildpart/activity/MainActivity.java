@@ -73,6 +73,7 @@ public class MainActivity extends BaseActivity  {
         StatusBarCompat.setStatusBarColor(this,222222,true);
 
 
+
     }
 
 
