@@ -4,7 +4,6 @@ import android.content.Context;
 import android.widget.Toast;
 
 
-
 public class ToastUtils {
     private static Context context;
     private static CustomToast customToast;

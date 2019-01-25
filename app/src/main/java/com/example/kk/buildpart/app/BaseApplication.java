@@ -5,9 +5,12 @@ import android.app.Application;
 import android.util.Log;
 
 import com.example.kk.buildpart.base.BaseActivity;
+import com.example.kk.buildpart.tools.ToastUtils;
 import com.tencent.smtt.sdk.QbSdk;
 
 import java.util.Stack;
+
+import us.zoom.sdk.ZoomSDK;
 
 /**
  * Created by kk on 2019/1/10.
@@ -18,7 +21,8 @@ public class BaseApplication extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
-
+        ToastUtils.init(this);
+        //ZoomSDK.getInstance().setDomain();
         //初始化X5内核
         QbSdk.initX5Environment(this, new QbSdk.PreInitCallback() {
             @Override

@@ -4,6 +4,8 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/buildPart2.iml" filepath="$PROJECT_DIR$/buildPart2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zoomcommonlibs/zoomcommonlibs.iml" filepath="$PROJECT_DIR$/zoomcommonlibs/zoomcommonlibs.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zoommobilertc/zoommobilertc.iml" filepath="$PROJECT_DIR$/zoommobilertc/zoommobilertc.iml" />
     </modules>
   </component>
 </project>

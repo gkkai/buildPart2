@@ -2,14 +2,17 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 27
-    buildToolsVersion "28.0.0"
+    buildToolsVersion "25.0.1"
     defaultConfig {
         applicationId "com.example.kk.buildpart"
         minSdkVersion 18
         targetSdkVersion 27
-        versionCode 1
-        versionName "1.0"
+        versionCode 100
+        versionName "1.0.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        ndk{
+            abiFilters "armeabi", "armeabi-v7a", "x86", "mips"
+        }
     }
     buildTypes {
         release {
@@ -30,4 +33,10 @@ dependencies {
     compile 'com.yanzhenjie:permission:1.0.5'
     compile files('libs/tbs_sdk_thirdapp_v3.6.0.1310_43612_sharewithdownload_withoutGame_obfs_20180706_163319.jar')
     compile files('libs/butterknife-7.0.1.jar')
+    compile 'com.google.code.gson:gson:2.8.1'
+    compile project(':zoomcommonlibs')
+    compile project(':zoommobilertc')
+    compile 'com.squareup.okhttp3:okhttp:3.5.0'
+    compile files('libs/async-http-client.jar')
+    compile 'com.githang:status-bar-compat:latest.integration'
 }
